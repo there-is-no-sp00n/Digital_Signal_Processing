@@ -53,6 +53,7 @@ arr_2_lp = []
 arr_3_lp = []
 arr_4_lp = []
 
+#low pass filter
 #convolve every element in the list then display the new image
 for i in range(0, len(arr_1)):
 	arr_1_lp.append(np.convolve(arr_1[i], low_pass))
@@ -84,7 +85,7 @@ plt.title("Tank Low Pass Filter")
 
 
 
-#part g high filter
+#part g high pass filter
 
 high_pass = [1, -1]
 
@@ -123,7 +124,7 @@ plt.title("Tank High Pass Filter")
 
 
 
-#part g
+#part h
 
 my_image_5 = pimg.imread('darinGrayNoise.jpg')
 plt.figure(13)
